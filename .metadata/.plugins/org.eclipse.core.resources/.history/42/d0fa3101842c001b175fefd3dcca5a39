@@ -1,0 +1,11 @@
+package com.sagar.ioc;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Coach mycoach = new FootBallCoach();
+		System.out.println(mycoach.getDailyWorkout());
+	}
+
+}

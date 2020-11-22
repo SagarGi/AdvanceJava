@@ -1,0 +1,14 @@
+package com.sagar.ioc.annotation;
+
+import org.springframework.stereotype.Component;
+
+@Component("crickCoach")
+public class CricketCoach implements Coach{
+	
+
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "Practise for one hour!!";
+	}
+}

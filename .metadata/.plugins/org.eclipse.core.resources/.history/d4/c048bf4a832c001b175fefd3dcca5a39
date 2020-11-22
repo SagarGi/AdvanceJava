@@ -1,0 +1,8 @@
+package com.sagar.ioc;
+
+public class CricketCoach {
+	public String getDailWorkout()
+	{
+		return "Practise cricket for 60 min";
+	}
+}

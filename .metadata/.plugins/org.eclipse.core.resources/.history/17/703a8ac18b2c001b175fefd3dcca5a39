@@ -1,0 +1,24 @@
+package com.sagar.ioc;
+
+public class CricketCoach implements Coach{
+	
+	FortuneService fortuneService;
+	
+	public CricketCoach(FortuneService fortuneService)
+	{
+		this.fortuneService = fortuneService;
+	}
+	
+
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "Practise for one hour!!";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

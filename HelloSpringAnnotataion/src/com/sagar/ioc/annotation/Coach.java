@@ -1,0 +1,7 @@
+package com.sagar.ioc.annotation;
+
+public interface Coach {
+	public String getDailyWorkout();
+	public String getDailyFortune();
+	
+}

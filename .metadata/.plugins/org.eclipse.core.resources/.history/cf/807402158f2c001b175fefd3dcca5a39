@@ -1,0 +1,42 @@
+package com.sagar.ioc;
+
+public class FootBallCoach implements Coach{
+	
+//	DI 1. constructor 2. setter (Injection methods)
+	
+	
+	private FortuneService fortuneService;
+	
+	public FootBallCoach()
+	{
+		
+	}
+	
+//	injecting using constructor
+	public FootBallCoach(FortuneService fortuneService)
+	{
+		this.fortuneService = fortuneService;
+	}
+	
+//	using setter method injection
+	
+	public void setFortuneService(FortuneService fortuneService)
+	{
+		this.fortuneService = fortuneService;
+	}
+	
+	
+	
+	
+	public String getDailyWorkout()
+	{
+		return "Run for 30 min";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+//		directly dependent!! making the fortune services class
+		return fortuneService.getFortune();
+	}
+}

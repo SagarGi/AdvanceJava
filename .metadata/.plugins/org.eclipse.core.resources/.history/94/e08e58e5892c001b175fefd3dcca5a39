@@ -1,0 +1,11 @@
+package com.sagar.ioc;
+
+public class CricketCoach implements Coach{
+	
+
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "Practise for one hour!!";
+	}
+}

@@ -1,0 +1,10 @@
+package com.sagar.ioc;
+
+import com.sagar.ioc.annotation.Coach;
+
+public class FootBallCoach implements Coach{
+	public String getDailyWorkout()
+	{
+		return "Run for 30 min";
+	}
+}

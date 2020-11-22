@@ -1,0 +1,15 @@
+package com.sagar.ioc;
+
+public class FootBallCoach implements Coach{
+	public String getDailyWorkout()
+	{
+		return "Run for 30 min";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+//		directly dependent!! making the fortune services class
+		return null;
+	}
+}

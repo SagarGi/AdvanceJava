@@ -1,0 +1,20 @@
+package com.sagar.ioc;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class BeanScopeApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beanLifeCycleContext.xml");
+		FootBallCoach theCoach1 = context.getBean("footballcoach", FootBallCoach.class);
+		FootBallCoach theCoach2 = context.getBean("footballcoach", FootBallCoach.class);
+		
+		System.out.println(theCoach1);
+		System.out.println(theCoach2);
+		
+		context.close();
+
+	}
+
+}

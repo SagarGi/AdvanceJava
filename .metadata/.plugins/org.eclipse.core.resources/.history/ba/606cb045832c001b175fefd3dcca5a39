@@ -1,0 +1,8 @@
+package com.sagar.ioc;
+
+public class FootBallCoach implements {
+	public String getDailyWorkout()
+	{
+		return "Run for 30 min";
+	}
+}

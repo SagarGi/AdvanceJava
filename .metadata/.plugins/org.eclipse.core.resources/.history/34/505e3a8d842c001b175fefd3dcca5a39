@@ -1,0 +1,19 @@
+package com.sagar.ioc;
+
+public class SpringApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		configuration for spring container
+		
+//		Steps 1. configure Spring Beans.
+//		Step 2. Create spring Container
+//		step 3. Retrive Beans from the container
+		
+		
+		
+		
+		
+	}
+
+}

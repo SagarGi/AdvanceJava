@@ -1,0 +1,14 @@
+package com.sagar.ioc;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+//		ioc container gives the object where as we need to ask for the objects
+//		3 ways 1. through xml 2. through annotation and 3. throuth java code 
+		
+		Coach mycoach = new FootBallCoach();
+		
+		System.out.println(mycoach.getDailyWorkout());
+	}
+
+}

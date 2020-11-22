@@ -1,0 +1,11 @@
+package com.sagar.ioc.annotation;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class FootBallCoach implements Coach{
+	public String getDailyWorkout()
+	{
+		return "Run for 30 min";
+	}
+}
